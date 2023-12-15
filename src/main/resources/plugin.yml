@@ -1,0 +1,6 @@
+name: WorldJoinCommands
+version: 3.0
+main: nl.juriantech.worldjoincommands
+authors: [ JasperTheDev ]
+description: A plugin which allows server admins to execute commands when a player joins.
+softdepend: [PlaceholderAPI]
