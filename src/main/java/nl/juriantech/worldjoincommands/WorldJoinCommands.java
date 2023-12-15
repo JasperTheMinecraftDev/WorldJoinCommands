@@ -36,9 +36,9 @@ public class WorldJoinCommands extends JavaPlugin {
     private void commands() {
         CommandHandler commandHandler = BukkitCommandHandler.create(this);
 
-        commandHandler.register(new BypassToggle());
-        commandHandler.register(new Help());
-        commandHandler.register(new Reload());
+        commandHandler.register(new BypassToggle(this));
+        commandHandler.register(new Help(this));
+        commandHandler.register(new Reload(this));
     }
 
     private YamlDocument loadFile(String fileName) {
