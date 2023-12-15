@@ -26,10 +26,10 @@ public class WorldJoinCommands extends JavaPlugin {
         printConsoleMessage("Enabling");
 
         if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
-            System.out.println(customizationFile.getString("console-messages.activating-papi-hook"));
-            System.out.println(customizationFile.getString("console-messages.papi-hook-activated"));
+            getLogger().info(customizationFile.getString("console-messages.activating-papi-hook"));
+            getLogger().info(customizationFile.getString("console-messages.papi-hook-activated"));
         } else {
-            System.out.println(customizationFile.getString("console-messages.placeholderapi-not-found"));
+            getLogger().info(customizationFile.getString("console-messages.placeholderapi-not-found"));
         }
     }
 
